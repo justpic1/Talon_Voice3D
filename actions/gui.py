@@ -4,22 +4,11 @@ ctx = Context()
 #ctx.tags = ["user.voice3d"]
 mod.list("gui_action_list", desc="List of GUI actions")
 ctx.lists["user.gui_action_list"] = {
-    "close": "close",
-    "copy": "copy",
-    "cut": "cut",
-    "delete": "delete",
-    "find": "find",
-    "go back": "goBack",
-    "go forward": "goForward",
-    "go to line": "gotoLine",
-    "indent": "indent",
-    "open": "open",
-    "paste": "paste",
-    "redo": "redo",
-    "save": "save",
-    "save all": "saveAll",
-    "select all": "selectAll",
-    "undo": "undo",
+    "close": "closeCurrentProject",
+    "next project": "goUpProject",
+    "last project": "goDownProject",
+    "new project": "newProject",
+    "menu" : "selectMenu"
 }
 
 
