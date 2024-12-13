@@ -30,8 +30,7 @@ def anatomical_positions(m) -> str:
         "superior": [0, 1, 0],
         "inferior": [0, -1, 0],
     }
-    vec3 = [0, 0, 0]
-    vec3 = np.add(vec3, pos_to_vec[m.anatomical_positions])
+    vec3 = pos_to_vec[m.anatomical_positions]
     return " ".join([str(i) for i in vec3])
 @mod.action_class
 class Actions:
@@ -40,3 +39,7 @@ class Actions:
         print("something worked here")
         position = np.sum([np.array(i.split()).astype(int) for i in position], axis=0)
         print(position)
+    def voice3d_view_target(target: str):
+        """Move the camera to view a specific target"""
+        print("something worked here")
+        print(target)

@@ -9,7 +9,7 @@ view <user.anatomical_positions>+:
 
 # commands such as view air would find the token object air and view it head on
 view <user.base_target>:
-    user.voice3d_view(base_target)
+    user.voice3d_view_target(base_target)
 
 # commands such as focus air would find the token object air and focus on it
 # giving it the root of the camera rotation
@@ -17,7 +17,7 @@ focus <user.base_target>:
     user.voice3d_focus(base_target)
 
 # commands such as "draw square" and "draw square on air" would draw a square
-draw <user.objects_2d> [<prep> <location>]:
+draw <user.objects_2d> [<destination>]:
     user.voice3d_draw(objects_2d)
 
 # commands such as "create cube" and "create cube on air" would create a cube
@@ -28,8 +28,7 @@ create <user.objects_3d>:
 move <user.object>:
     user.voice3d_move(move_target)
 
-
-modify <user.target>:
+<user.modfiers> <user.target>:
     user.voice3d_modify(modify_target)
 
 # commands such as "delete air" and "delete air and bat" 
@@ -41,7 +40,3 @@ delete <user.target>:
 <user.modes>:
     user.voice3d_mode(modes)
 
-
-
-#<user.commands>:
-#    print("hi")
