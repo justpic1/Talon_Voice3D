@@ -41,7 +41,7 @@ class Actions:
         actions.user.send_rpc_message(
             f"command: camera_move\n"
             "\n"
-            f"destination:  | {position[0]} {position[1]} {position[2]}"
+            f"destination:  |   | {position[0]} {position[1]} {position[2]}"
         )
     def voice3d_view_target(target: str):
         """Move the camera to view a specific target"""

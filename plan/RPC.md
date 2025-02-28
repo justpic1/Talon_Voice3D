@@ -25,5 +25,5 @@
 ```
 command: name
 target1: descriptor1 - descriptor2... | target2...
-destination: prep | target
+destination: length | prep | target
 ```

@@ -28,15 +28,21 @@ create <user.objects_3d>:
 move <user.object>:
     user.voice3d_move(move_target)
 
-<user.modfiers> <user.target>:
-    user.voice3d_modify(modify_target)
+{user.modifier} [<user.base_target>] [<user.length>] [{user.prep}] [<user.base_target>]:
+    user.voice3d_modify(modifier or "", base_target_1 or "", length or "", prep or "", base_target_2 or "")
+
 
 # commands such as "delete air" and "delete air and bat" 
 # would delete the object air or air and bat
-delete <user.target>:
+delete <user.base_target>:
     user.voice3d_delete(delete_target)
 
 # commands such as "faces" would give the faces target decorators
 <user.modes>:
     user.voice3d_mode(modes)
 
+<user.base_target>:
+    print("target: " + user.base_target)
+
+q:
+    user.send_rpc_message("quit")

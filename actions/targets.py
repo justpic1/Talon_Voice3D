@@ -2,10 +2,13 @@ from talon import Module, Context
 
 mod = Module()
 ctx = Context()
-@mod.capture(rule="<user.letter>")
+@mod.capture(rule="[{user.color}] <user.letter>")
 def base_target(m) -> str:
     "Base targets"
-    return m.letter
+    if hasattr(m, 'color'):
+        return f"{m.color} {m.letter}"
+    else:
+        return f"{m.letter}"
 
 @mod.action_class
 class Actions:
