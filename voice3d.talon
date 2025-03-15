@@ -4,7 +4,7 @@ gui <user.gui_command>:
 
 # commands such as view ant soup would use anatomical positions to describe 
 # which orientation to view the object
-view <user.anatomical_positions>+:
+[view] <user.anatomical_positions>+:
     user.voice3d_view(anatomical_positions_list)
 
 # commands such as view air would find the token object air and view it head on
