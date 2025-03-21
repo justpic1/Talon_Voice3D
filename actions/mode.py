@@ -7,6 +7,7 @@ ctx.lists["user.mode_list"] = {
     "vertices",
     "edges",
     "objects",
+    "all",
 }
 
 

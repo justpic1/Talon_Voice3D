@@ -20,7 +20,7 @@ ctx.lists["user.modifier"] = {
     "undo" : "undo",
     "redo" : "redo",
     "present": "present",
-    
+    "construct": "construct",
 }
 
 @mod.action_class

@@ -12,5 +12,9 @@ ctx.lists["user.prep"] = {
     "past" : "past",
     "up" : "up",
     "down" : "down",
-    
+    "left" : "left",
+    "right" : "right",
+    "front" : "forward",
+    "back" : "back",
+
 }
