@@ -9,3 +9,5 @@ ___
 Yes, Ant Soup is a term
 
 ![screenshot](Ant_Soup.jpg)
+
+[Installation](https://github.com/Cyberneticbacon/Talon_Voice3D/wiki/Installation)
